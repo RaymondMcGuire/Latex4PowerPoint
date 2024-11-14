@@ -1,0 +1,136 @@
+% cgmathnotation.sty
+% 数学符号规范化样式文件
+% 基于ISO 80000标准和常见学术出版规范
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cgmathnotation}[2024/03/07 v1.1 数学符号标准化]
+
+% 必需的包
+\RequirePackage{amsmath}    % 数学公式基础支持
+\RequirePackage{bm}         % 粗体数学符号
+\RequirePackage{siunitx}    % 单位支持
+\RequirePackage{xparse}     % 更好的命令定义支持
+\RequirePackage{etoolbox}   % 用于高级命令定义
+
+%% ============ 基础数学对象 ============
+
+% 矩阵 (粗体直立)
+\newcommand{\mat}[1]{\mathbf{#1}}
+
+% 向量 (粗体直立)
+\newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\veccomp}[2]{#1_{\mathrm{#2}}} % 向量分量，如 \veccomp{v}{x} 得到 v_x（x是直立的）
+
+% 标量变量 (斜体，默认)
+\newcommand{\scalar}[1]{#1}
+
+% 常量 (直立)
+\newcommand{\const}[1]{\mathrm{#1}}
+
+% 物理量 (斜体)
+\newcommand{\phys}[1]{#1}
+
+%% ============ 微分算子 ============
+
+% 普通微分
+\newcommand{\diff}{\mathrm{d}}
+
+% 偏微分符号（直立）
+\newcommand{\partiald}{\mathrm{\partial}}
+
+% 偏导数（增强版，支持可选的阶数）
+\newcommand{\pder}[3][]{%
+    \ifstrempty{#1}
+        {\frac{\partiald #2}{\partiald #3}}
+        {\frac{\partiald^{#1} #2}{\partiald #3^{#1}}}
+}
+
+% 全微分（增强版，支持可选的阶数）
+\newcommand{\tder}[3][]{%
+    \ifstrempty{#1}
+        {\frac{\mathrm{d} #2}{\mathrm{d} #3}}
+        {\frac{\mathrm{d}^{#1} #2}{\mathrm{d} #3^{#1}}}
+}
+
+% 混合偏导数
+\newcommand{\pmder}[4]{%
+    \frac{\partiald^2 #1}{\partiald #2\partiald #3}
+}
+
+%% ============ 特殊数学对象 ============
+
+% 张量 (衬线体粗体)
+\newcommand{\tensor}[1]{\bm{\mathsf{#1}}}
+
+% 算子 (粗体直立)
+\newcommand{\operator}[1]{\mathbf{#1}}
+
+% 集合 (粗体直立)
+\newcommand{\set}[1]{\mathbf{#1}}
+
+% 矩阵元素
+\newcommand{\matelem}[3]{\mat{#1}_{#2#3}}
+
+% 矩阵分块
+\newcommand{\matblock}[1]{\mathbf{#1}}
+
+% 特殊矩阵
+\newcommand{\matspecial}[1]{\mathbf{#1}}
+
+%% ============ 单位和数值 ============
+
+% 单位（使用siunitx）
+\newcommand{\siunit}[2]{\SI{#1}{#2}}
+
+% 角度
+\newcommand{\degree}{\ensuremath{^\circ}}
+
+%% ============ 常用数学常量 ============
+
+% 常用数学常量
+\newcommand{\eu}{\mathrm{e}}     % 自然对数底
+\newcommand{\im}{\mathrm{i}}     % 虚数单位
+\renewcommand{\pi}{\mathrm{\pi}}  % 圆周率
+
+%% ============ 向量运算 ============
+
+% 点积
+\newcommand{\dotprod}[2]{\vect{#1} \cdot \vect{#2}}
+
+% 叉积
+\newcommand{\crossprod}[2]{\vect{#1} \times \vect{#2}}
+
+% 范数
+\newcommand{\norm}[1]{\left\|\vect{#1}\right\|}
+
+%% ============ 矩阵运算 ============
+
+% 矩阵转置
+\newcommand{\trans}[1]{\mat{#1}^{\mathsf{T}}}
+
+% 矩阵求逆
+\newcommand{\inv}[1]{\mat{#1}^{-1}}
+
+% 矩阵逆转置
+\newcommand{\invtrans}[1]{\mat{#1}^{-\mathsf{T}}}  % 新添加的命令
+
+% 或者这样定义可能更好（方便输入-T这种形式）：
+\newcommand{\mT}{^{-\mathsf{T}}}  % 可以直接用作上标
+
+%% ============ 常用函数名 ============
+
+% 确保函数名为直立体
+\newcommand{\trace}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\rank}{\operatorname{rank}}
+
+%% ============ 概率统计 ============
+
+% 期望
+\newcommand{\expect}[1]{\mathbb{E}\left[#1\right]}
+
+% 概率
+\newcommand{\prob}[1]{\mathbb{P}\left(#1\right)}
+
+% 方差
+\newcommand{\var}[1]{\operatorname{Var}\left(#1\right)}

@@ -1,0 +1,134 @@
+% ==== cgmathnotation_en.sty ====
+% Mathematical Notation Style File
+% Based on ISO 80000 standard and common academic publishing conventions
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cgmathnotation}[2024/03/07 v1.1 Mathematical Notation Standardization]
+
+% Required packages
+\RequirePackage{amsmath}    % Basic math support
+\RequirePackage{bm}         % Bold math symbols
+\RequirePackage{siunitx}    % Unit support
+\RequirePackage{xparse}     % Better command definition support
+\RequirePackage{etoolbox}   % For advanced command definitions
+
+%% ============ Basic Mathematical Objects ============
+
+% Matrix (bold upright)
+\newcommand{\mat}[1]{\mathbf{#1}}
+
+% Vector (bold upright)
+\newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\veccomp}[2]{#1_{\mathrm{#2}}} % Vector component, e.g., \veccomp{v}{x}
+
+% Scalar variable (italic by default)
+\newcommand{\scalar}[1]{#1}
+
+% Constant (upright)
+\newcommand{\const}[1]{\mathrm{#1}}
+
+% Physical quantity (italic)
+\newcommand{\phys}[1]{#1}
+
+%% ============ Differential Operators ============
+
+% Ordinary differential
+\newcommand{\diff}{\mathrm{d}}
+
+\newcommand{\partiald}{\mathrm{\partial}}
+
+% Partial derivative (enhanced version with optional order)
+\newcommand{\pder}[3][]{%
+    \ifstrempty{#1}
+        {\frac{\partiald #2}{\partiald #3}}
+        {\frac{\partiald^{#1} #2}{\partiald #3^{#1}}}
+}
+
+% Total derivative (enhanced version with optional order)
+\newcommand{\tder}[3][]{%
+    \ifstrempty{#1}
+        {\frac{\mathrm{d} #2}{\mathrm{d} #3}}
+        {\frac{\mathrm{d}^{#1} #2}{\mathrm{d} #3^{#1}}}
+}
+
+
+% Mixed partial derivative
+\newcommand{\pmder}[4]{%
+    \frac{\partiald^2 #1}{\partiald #2\partiald #3}
+}
+
+%% ============ Special Mathematical Objects ============
+
+% Tensor (bold sans-serif)
+\newcommand{\tensor}[1]{\bm{\mathsf{#1}}}
+
+% Operator (bold upright)
+\newcommand{\operator}[1]{\mathbf{#1}}
+
+% Set (bold upright)
+\newcommand{\set}[1]{\mathbf{#1}}
+
+% Matrix element
+\newcommand{\matelem}[3]{\mat{#1}_{#2#3}}
+
+% Matrix block
+\newcommand{\matblock}[1]{\mathbf{#1}}
+
+% Special matrices
+\newcommand{\matspecial}[1]{\mathbf{#1}}
+
+%% ============ Units and Values ============
+
+% Units (using siunitx)
+\newcommand{\siunit}[2]{\SI{#1}{#2}}
+
+% Angle
+\newcommand{\degree}{\ensuremath{^\circ}}
+
+%% ============ Common Mathematical Constants ============
+
+% Mathematical constants
+\newcommand{\eu}{\mathrm{e}}     % Natural exponential base
+\newcommand{\im}{\mathrm{i}}     % Imaginary unit
+\renewcommand{\pi}{\mathrm{\pi}}  % Pi
+
+%% ============ Vector Operations ============
+
+% Dot product
+\newcommand{\dotprod}[2]{\vect{#1} \cdot \vect{#2}}
+
+% Cross product
+\newcommand{\crossprod}[2]{\vect{#1} \times \vect{#2}}
+
+% Norm
+\newcommand{\norm}[1]{\left\|\vect{#1}\right\|}
+
+%% ============ Matrix Operations ============
+
+% Matrix transpose
+\newcommand{\trans}[1]{\mat{#1}^{\mathsf{T}}}
+
+% Matrix inverse
+\newcommand{\inv}[1]{\mat{#1}^{-1}}
+
+% Matrix inverse transpose (two alternative commands)
+\newcommand{\invtrans}[1]{\mat{#1}^{-\mathsf{T}}}
+\newcommand{\mT}{^{-\mathsf{T}}}  % Can be used directly as superscript
+
+%% ============ Common Function Names ============
+
+% Ensure function names are upright
+\newcommand{\trace}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\rank}{\operatorname{rank}}
+
+%% ============ Probability and Statistics ============
+
+% Expected value
+\newcommand{\expect}[1]{\mathbb{E}\left[#1\right]}
+
+% Probability
+\newcommand{\prob}[1]{\mathbb{P}\left(#1\right)}
+
+% Variance
+\newcommand{\var}[1]{\operatorname{Var}\left(#1\right)}

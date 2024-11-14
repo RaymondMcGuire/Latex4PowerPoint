@@ -1,0 +1,131 @@
+% example.tex
+\documentclass{article}
+\usepackage{ctex}    % 中文支持
+\usepackage{cgmathnotation}
+\usepackage{geometry}
+
+\geometry{a4paper, margin=2.5cm} % 页面设置
+
+\title{数学符号使用示例}
+\author{示例文档}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{基础数学符号使用}
+
+\subsection{矩阵和向量}
+
+基本的矩阵和向量表示：
+\[
+    \mat{A}, \mat{B}, \mat{C} \quad \text{(矩阵)}
+\]
+\[
+    \vect{x}, \vect{y}, \vect{z} \quad \text{(向量)}
+\]
+
+向量分量：
+\[
+    \vect{v} = (\veccomp{v}{x}, \veccomp{v}{y}, \veccomp{v}{z})
+\]
+
+\subsection{微分算子}
+
+一阶偏导数：
+\[
+    \pder{f}{x}, \quad \pder{f}{y}, \quad \pder{f}{z}
+\]
+
+高阶偏导数：
+\[
+    \pder[2]{f}{x}, \quad \pder[3]{f}{x}, \quad \pder[n]{f}{x}
+\]
+
+混合偏导数：
+\[
+    \pmder{f}{x}{y} = \frac{\partial^2 f}{\partial x\partial y}
+\]
+
+全微分：
+\[
+    \tder{y}{x}, \quad \tder[2]{y}{x}, \quad \tder[n]{y}{x}
+\]
+
+\subsection{物理量和单位}
+
+物理量表示：
+\[
+    \phys{F} = \scalar{m}\vect{a} = \siunit{9.81}{N}
+\]
+
+温度变化：
+\[
+    \Delta T = \siunit{273.15}{K} = \siunit{0}{\celsius}
+\]
+
+\subsection{向量运算}
+
+点积和叉积：
+\[
+    \dotprod{\vect{a}}{\vect{b}} = |\vect{a}||\vect{b}|\cos\theta
+\]
+\[
+    \crossprod{\vect{a}}{\vect{b}} = |\vect{a}||\vect{b}|\sin\theta\,\vect{n}
+\]
+
+向量范数：
+\[
+    \norm{\vect{x}} = \sqrt{\dotprod{\vect{x}}{\vect{x}}}
+\]
+
+\subsection{矩阵运算}
+
+基本运算：
+\[
+    \mat{C} = \mat{A}\mat{B}
+\]
+
+转置和逆：
+\[
+    \mat{D} = \trans{\mat{A}}\inv{\mat{B}}
+\]
+
+矩阵元素：
+\[
+    \matelem{A}{i}{j} = a_{ij}
+\]
+
+\subsection{概率统计}
+
+概率：
+\[
+    \prob{X > x} = 1 - F(x)
+\]
+
+期望和方差：
+\[
+    \expect{X} = \mu, \quad \var{X} = \sigma^2
+\]
+
+\section{应用示例}
+
+\subsection{热传导方程}
+一维热传导方程：
+\[
+    \pder{\phys{T}}{t} = \alpha \pder[2]{\phys{T}}{x}
+\]
+
+\subsection{运动方程}
+牛顿第二定律：
+\[
+    \phys{F} = \scalar{m}\tder[2]{\vect{x}}{t}
+\]
+
+\subsection{电磁场方程}
+Maxwell方程组（一部分）：
+\[
+    \operator{\nabla} \times \vect{E} = -\pder{\vect{B}}{t}
+\]
+
+\end{document}
