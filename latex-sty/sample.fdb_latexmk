@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1730984548.31911 "d:/doc/latex-sty/sample.tex" "sample.pdf" "sample" 1730984550.45049 2
+["pdflatex"] 1733210766.19978 "d:/project/library/Latex4PowerPoint/latex-sty/sample.tex" "sample.pdf" "sample" 1733210767.69696 2
   "C:/Users/localhost/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1730962530 179376 e819b0afbc5e9bf989aae2462a2e2638 ""
   "C:/Users/localhost/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730962788 11987436 6334525b28a0ceb6d99abf6cb2ba272e ""
   "C:/Users/localhost/AppData/Local/Programs/MiKTeX/fonts/sfd/ttf2pk/UGBK.sfd" 1458473944 185547 bcd31d5d273400b38612a969fcab55f9 ""
@@ -92,6 +92,7 @@
   "C:/Users/localhost/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong7f.tfm" 1247154072 1172 4fb15fe26ea6dad0b54285fd42fdf8b9 ""
   "C:/Users/localhost/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong83.tfm" 1247154072 1172 7dfd9db201c758b6a39baf9f8fe63ca3 ""
   "C:/Users/localhost/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong88.tfm" 1247154072 1172 e80b61bcc19bffe1009dc0e70ca042e8 ""
+  "C:/Users/localhost/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong8b.tfm" 1247154072 1172 cb1829d4415ae14a6d1b42840373e23a ""
   "C:/Users/localhost/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong8f.tfm" 1247154072 1172 39abbbe02586d0f65fa39c19429184a6 ""
   "C:/Users/localhost/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong90.tfm" 1247154072 1172 1dd258add692258fd748a53ff76ed075 ""
   "C:/Users/localhost/AppData/Local/Programs/MiKTeX/fonts/tfm/zhmetrics/unisong/unisong91.tfm" 1247154072 1172 084e1e91aa4ae30efc415c3663943670 ""
@@ -170,13 +171,13 @@
   "C:/Users/localhost/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/localhost/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber-utf8.cfg" 1657817710 5700 603e2f09dad175efabc8594730623a0b ""
   "C:/Users/localhost/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber.sty" 1657817710 38160 aafa8d740e4f21b62a4acd4835e54359 ""
-  "C:/Users/localhost/texmf/tex/latex/local/cgmathnotation/cgmathnotation.sty" 1730971378 3407 aa7848ce522917263b4f1f9ad6b6afe8 ""
+  "C:/Users/localhost/texmf/tex/latex/local/cgmathnotation/cgmathnotation.sty" 1733210650 3414 21305543c6beb301ce229c1015686025 ""
   "C:/WINDOWS/Fonts/msyh.ttc" 1699587918 19701556 07c864a5b15e68fa47639738197fae38 ""
   "C:/WINDOWS/Fonts/simhei.ttf" 1571114760 9753388 6abc0fcfbaa40600f9cecca3afeb3aa7 ""
   "C:/WINDOWS/Fonts/simsun.ttc" 1699587919 18008680 490583a172d4371a68d1e0526a6bca81 ""
-  "d:/doc/latex-sty/sample.tex" 1730963494 2282 07d255099991c6ecd1acbc3b7bc077c1 ""
-  "sample.aux" 1730984549 1204 f81e602bc653a3d733ea7fa4e79a0459 "pdflatex"
-  "sample.tex" 1730963494 2282 07d255099991c6ecd1acbc3b7bc077c1 ""
+  "d:/project/library/Latex4PowerPoint/latex-sty/sample.tex" 1733210763 2352 c0c5aeb211d4536442132d4b6faca73a ""
+  "sample.aux" 1733210767 1204 f81e602bc653a3d733ea7fa4e79a0459 "pdflatex"
+  "sample.tex" 1733210763 2352 c0c5aeb211d4536442132d4b6faca73a ""
   (generated)
   "sample.aux"
   "sample.log"

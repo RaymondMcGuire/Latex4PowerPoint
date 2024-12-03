@@ -1,6 +1,6 @@
-PWD d:\doc\latex-sty
+PWD d:\project\library\Latex4PowerPoint\latex-sty
 INPUT C:\Users\localhost\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\doc\latex-sty\sample.tex
+INPUT d:\project\library\Latex4PowerPoint\latex-sty\sample.tex
 OUTPUT sample.log
 INPUT C:\Users\localhost\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\localhost\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -127,9 +127,6 @@ INPUT C:\Users\localhost\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pd
 INPUT C:\Users\localhost\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT C:\Users\localhost\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT C:\Users\localhost\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
-INPUT .\sample.aux
-INPUT .\sample.aux
-INPUT sample.aux
 OUTPUT sample.aux
 INPUT C:\Users\localhost\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
 INPUT C:\Users\localhost\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
@@ -259,6 +256,7 @@ INPUT C:\Users\localhost\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\uniso
 INPUT C:\Users\localhost\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss10.tfm
 INPUT C:\Users\localhost\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss8.tfm
 INPUT C:\Users\localhost\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss8.tfm
+INPUT C:\Users\localhost\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong8b.tfm
 INPUT C:\Users\localhost\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unisong\unisong7d.tfm
 INPUT C:\Users\localhost\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei69.tfm
 INPUT C:\Users\localhost\AppData\Local\Programs\MiKTeX\fonts\tfm\zhmetrics\unihei\unihei73.tfm
@@ -294,6 +292,7 @@ INPUT C:\WINDOWS\Fonts\simhei.ttf
 INPUT C:\WINDOWS\Fonts\simhei.ttf
 INPUT C:\WINDOWS\Fonts\simhei.ttf
 INPUT C:\WINDOWS\Fonts\simhei.ttf
+INPUT C:\WINDOWS\Fonts\simsun.ttc
 INPUT C:\WINDOWS\Fonts\simsun.ttc
 INPUT C:\WINDOWS\Fonts\simsun.ttc
 INPUT C:\WINDOWS\Fonts\simsun.ttc
