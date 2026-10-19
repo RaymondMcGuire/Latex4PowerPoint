@@ -59,4 +59,10 @@ Code snippets and auto completion are very helpful to write down equations very 
 
 Code snippets can be added by pressing "Ctrl + J".  Currently, there are only a few snippets available. However, you can define new ones by editing the file "Language.xml" which is in the same folder as the Latex template. 
 
+## Set up a new PC
+
+1. Install the add-in, start PowerPoint, and set the MiKTeX path in the add-in options.
+2. Run `latex-sty\install.bat`. It installs the notation package cgmathnotation. If the current template does not load cgmathnotation, it also copies `latex-sty\LatexTemplate.txt` (with amssymb and cgmathnotation) to `%APPDATA%\Latex4PowerPoint`.
+3. If you use Claude Code, run `claude\install.bat`. It installs the latex4powerpoint skill to `%USERPROFILE%\.claude\skills` and runs a self-check. With the skill, Claude adds formulas to slides that this add-in can edit later.
+
 
